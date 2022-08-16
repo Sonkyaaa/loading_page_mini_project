@@ -1,0 +1,46 @@
+.spinner .box{
+   
+    width: 80px;
+    height: 80px;
+    border: 5px black;
+   
+    animation: spin 2000ms infinite;
+    align-self: center;
+    
+    /* opacity: 1; */
+}
+@keyframes spin {
+    0%,
+    100%{
+        background-color: silver;
+        transform: rotate(0deg);
+        border-radius: 50%;
+        
+    }
+    50%{
+        background-color: black;
+        transform: rotate(180deg);
+        border-radius: 0%;
+    }
+    
+}
+.spinner{
+    height: 700px;;
+    
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    opacity: 0.5; */
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+}
+.btn{
+    align-self:flex-end;
+    
+}
+.bgc{
+    background-color:lightblue;
+}
